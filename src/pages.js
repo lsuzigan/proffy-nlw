@@ -83,4 +83,8 @@ async function saveClasses(req, res) {
     }   
 }
 
-module.exports = { pageLanding, pageStudy, pageTeach, saveClasses }
+function pageSuccess(req, res) {
+    return res.render('success.html')
+}
+
+module.exports = { pageLanding, pageStudy, pageTeach, saveClasses, pageSuccess }

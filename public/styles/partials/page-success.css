@@ -1,0 +1,16 @@
+#page-success {
+    background: var(--color-primary);
+}
+
+#page-success #container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-success #container img {
+    width: 60vw;
+    height: 60vh;
+}

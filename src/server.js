@@ -10,7 +10,7 @@ nunjucks.configure('src/views', {
 })
 
 // Importing pages
-const { pageLanding, pageStudy, pageTeach, saveClasses } = require('./pages')
+const { pageLanding, pageStudy, pageTeach, saveClasses, pageSuccess } = require('./pages')
 
 server
     .use(express.urlencoded({ extended: true }))
@@ -21,5 +21,6 @@ server
     .get('/study', pageStudy)
     .get('/teach', pageTeach)
     .post('/save-classes', saveClasses)
+    .get('/success', pageSuccess)
     // Start server
     .listen(5000)
